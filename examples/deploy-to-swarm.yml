@@ -7,8 +7,8 @@ on:
 
 env:
   DOCKER_HOST: tcp://<ip-address-of-your-swarm-manager>:2376
-  DOCKER_REGISTRY_USER: <username>
-  DOCKER_REGISTRY_PASS: ${{ secrets.DOCKER_REGISTRY_PASS }}
+  DOCKER_REGISTRY_USER: ${{ secrets.DOCKER_USERNAME }}
+  DOCKER_REGISTRY_PASS: ${{ secrets.DOCKER_PASSWORD }}
 
 jobs:
   deploy:
